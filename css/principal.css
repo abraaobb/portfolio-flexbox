@@ -1,0 +1,187 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+p,
+label {
+    color: #363636;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+p,
+label {
+    font-size: 1.2em;
+    text-align: justify;
+}
+
+input,
+textarea {
+    outline: 0;
+    border-radius: 5px;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.menu>a {
+    color: #363636;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+.menu>a:hover {
+    background-color: #d8d8d8;
+    border-radius: 5px;
+}
+
+button {
+    color: #363636;
+    padding: 10px 20px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #d8d8d8;
+    transition: 0.3s;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #363636;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.cabecalho-container {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+}
+
+.menu {
+    margin-left: 30px;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    padding: 10px;
+    box-shadow: 0px 0px 5px #363636;
+    border-radius: 5px;
+}
+
+.tag {
+    background-color: #363636;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.perfil {
+    width: 320px;
+    height: fit-content;
+}
+
+.perfil>img {
+    width: 100%;
+}
+
+.principal {
+    width: 100%;
+    margin-left: 30px;
+}
+
+.experiencias {
+    margin-top: 30px;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+
+.experiencia>img {
+    width: 150px;
+    height: 150px;
+}
+
+.experiencia-texto {
+    margin-left: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    body {
+        font-size: 2em;
+    }
+
+    .cabecalho-container,
+    .container {
+        min-width: 500px;
+    }
+
+    .cabecalho-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        margin-left: 0px;
+    }
+
+    .perfil>img {
+        display: none;
+    }
+
+    .experiencia>img {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .perfil {
+        width: 100%;
+    }
+
+    .principal {
+        margin-left: 0px;
+        margin-top: 30px;
+    }
+}
